@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/eb574e44-2dbd-4250-9219-8bf0ea87987a/AppServices/subscriptions/eb574e44-2dbd-4250-9219-8bf0ea87987a/resourceGroups/fhir-app-react2-JPV/providers/Microsoft.Web/sites/fhir-app-react2-JPV",
+    "appService.deploySubpath": "."
+}

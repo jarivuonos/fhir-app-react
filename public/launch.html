@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FHIR App Starter Launch</title>
+    <script src="https://cdn.jsdelivr.net/npm/fhirclient/build/fhir-client.min.js"></script>
+  </head>
+
+  <body>
+    <script>
+      //clientId = "your-client-id-here";
+      //clientId = "20560ea5-f224-4658-b667-4e6bab935c85";
+
+      //Apotti App Orchard
+      //clientId = "813e058d-4934-4498-b412-46c8504772da"
+      
+      //Logica sandbox Copy of My App - TOIMII
+      clientId = "2612e02f-6254-4301-ac20-d10710ee901f";
+      
+      scope =
+        "patient/Patient.read online_access openid profile offline_access patient/Observation.read launch fhirUser";
+      // Replace me with your codesandbox URL on the right
+      //redirectUri = "https://c4ukw.csb.app/";
+      redirectUri = "index.html";
+      FHIR.oauth2.authorize({
+        clientId: clientId,
+        scope: scope,
+        redirectUri: redirectUri
+      });
+    </script>
+  </body></html>
